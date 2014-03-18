@@ -1,13 +1,11 @@
 HotelCommerce::Application.routes.draw do
+
+  resources :receipts
+
+
   resources :hotels
-
-
   resources :providers
-
-
   resources :users
-
-
   resources :deals
 
 

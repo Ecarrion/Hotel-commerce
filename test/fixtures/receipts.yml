@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  used: false
+  buyer_name: MyString
+  buyer_telephone: MyString
+  barcode: MyString
+  code: MyString
+
+two:
+  used: false
+  buyer_name: MyString
+  buyer_telephone: MyString
+  barcode: MyString
+  code: MyString

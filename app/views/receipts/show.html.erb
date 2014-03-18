@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Used:</b>
+  <%= @receipt.used %>
+</p>
+
+<p>
+  <b>Buyer name:</b>
+  <%= @receipt.buyer_name %>
+</p>
+
+<p>
+  <b>Buyer telephone:</b>
+  <%= @receipt.buyer_telephone %>
+</p>
+
+<p>
+  <b>Barcode:</b>
+  <%= @receipt.barcode %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%= @receipt.code %>
+</p>
+
+
+<%= link_to 'Edit', edit_receipt_path(@receipt) %> |
+<%= link_to 'Back', receipts_path %>
