@@ -1,14 +1,25 @@
 HotelCommerce::Application.routes.draw do
 
   resources :receipts
-  resources :deals
-  resources :hotels do
-    resources :deals
-  end
-  resources :providers do
-    resources :deals
-  end
   resources :users
+  
+  resources :deals do
+    resources :receipts
+  end
+  
+  resources :hotels do
+    resources :deals do
+      resources :receipts
+    end
+  end
+  
+  resources :providers do
+    resources :deals do
+      resources :receipts
+    end
+  end
+  
+  
   
 
 
