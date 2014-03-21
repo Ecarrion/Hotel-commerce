@@ -1,12 +1,15 @@
 HotelCommerce::Application.routes.draw do
 
   resources :receipts
-
-
-  resources :hotels
-  resources :providers
-  resources :users
   resources :deals
+  resources :hotels do
+    resources :deals
+  end
+  resources :providers do
+    resources :deals
+  end
+  resources :users
+  
 
 
   # The priority is based upon order of creation:
